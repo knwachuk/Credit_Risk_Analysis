@@ -105,7 +105,7 @@ for both **resampling** algorithms as well as **ensemble** algorithms.
 
 #### Undersampling
 
-| Procedure | `RandomOverSampler` |
+| Procedure | `ClusterCentroids` |
 | --------- | ------------------- |
 | Counter | {'loan_status': 1} |
 | Balanced Accuracy Score | 0.5447339051023905 |
@@ -116,6 +116,16 @@ for both **resampling** algorithms as well as **ensemble** algorithms.
 ![`ClusterCentroids` Imbalanced Classification Report](img/mltechptwy-mod-1-res-cc-report.png)
 
 #### Combination (Over and Under) Sampling
+
+| Procedure | `SMOTEENN` |
+| --------- | ------------------- |
+| Counter | {'loan_status': 1} |
+| Balanced Accuracy Score | 0.5447339051023905 |
+| Confusion Matrix | ![](img/mltechptwy-mod-1-res-comb-matrix.png) |
+
+##### `ClusterCentroids` Imbalanced Classification Report
+
+![`SMOTEENN` Imbalanced Classification Report](img/mltechptwy-mod-1-res-comb-report.png)
 
 ### Ensemble Algorithms
 
