@@ -12,7 +12,7 @@ The procedures listed above were done for
 2. Deliverable 2: Use the SMOTEENN algorithm to Predict Credit Risk (15 points)
 3. Deliverable 3: Use Ensemble Classifiers to Predict Credit Risk (25 points)
 
-### Data Proprocessing and Splitting
+### Data Proprocessing and Train/Test Splitting
 
 #### Load the Data
 
@@ -104,6 +104,18 @@ for both **resampling** algorithms as well as **ensemble** algorithms.
 ![`SMOTE` Imbalanced Classification Report](img/mltechptwy-mod-1-res-smote-report.png)
 
 #### Undersampling
+
+| Procedure | `RandomOverSampler` |
+| --------- | ------------------- |
+| Counter | {'loan_status': 1} |
+| Balanced Accuracy Score | 0.5447339051023905 |
+| Confusion Matrix | ![](img/mltechptwy-mod-1-res-cc-matrix.png) |
+
+##### `ClusterCentroids` Imbalanced Classification Report
+
+![`ClusterCentroids` Imbalanced Classification Report](img/mltechptwy-mod-1-res-cc-report.png)
+
+#### Combination (Over and Under) Sampling
 
 ### Ensemble Algorithms
 
