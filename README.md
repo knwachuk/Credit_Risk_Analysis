@@ -1,4 +1,4 @@
-# Credit_Risk_Analysis
+# Credit Risk Analysis
 
 [Module 1](https://trilogyed.instructure.com/courses/626/pages/1-dot-0-1-predicting-credit-risk?module_item_id=32015) is to use Python to build and evaluate machine learning models to predict credit risk. Specifically, oversampling (`RandomOverSampler`, `SMOTE`), undersampling (`ClusterCentroids`) and a combinatorial approach of over- and undersampling (`SMOTEEN`) is utilized to evavluate credit risk.
 
@@ -85,9 +85,26 @@ for both **resampling** algorithms as well as **ensemble** algorithms.
 
 ## Results
 
-# Resampling Algorithms
+### Resampling Algorithms
 
+#### Oversampling
 
+| Procedure | `RandomOverSampler` | `SMOTE` |
+| --------- | ------------------- | ------- |
+| Counter | {'loan_status': 1} | {'loan_status': 1} |
+| Balanced Accuracy Score | 0.6595620039085293 | 0.662861851549982 |
+| Confusion Matrix | ![](img/mltechptwy-mod-1-res-ros-matrix.png) | ![](img/mltechptwy-mod-1-res-smote-matrix.png) |
 
+##### `RandomOverSampler` Imbalanced Classification Report
+
+![`RandomOverSampler` Imbalanced Classification Report](img/mltechptwy-mod-1-res-ros-report.png)
+
+##### `SMOTE` Imbalanced Classification Report
+
+![`SMOTE` Imbalanced Classification Report](img/mltechptwy-mod-1-res-smote-report.png)
+
+#### Undersampling
+
+### Ensemble Algorithms
 
 ## Summary
