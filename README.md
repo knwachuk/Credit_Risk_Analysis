@@ -129,4 +129,17 @@ for both **resampling** algorithms as well as **ensemble** algorithms.
 
 ### Ensemble Algorithms
 
+| Procedure | `BalancedRandomForestClassifier` | `EasyEnsembleClassifier` |
+| --------- | ------------------- | ------- |
+| Balanced Accuracy Score | 0.7885466545953005 | 0.9316600714093861 |
+| Confusion Matrix | ![](img/mltechptwy-mod-1-res-brfc-matrix.png) | ![](img/mltechptwy-mod-1-eec-smote-matrix.png) |
+
+##### `BalancedRandomForestClassifier` Imbalanced Classification Report
+
+![`BalancedRandomForestClassifier` Imbalanced Classification Report](img/mltechptwy-mod-1-res-brfc-report.png)
+
+##### `EasyEnsembleClassifier` Imbalanced Classification Report
+
+![`EasyEnsembleClassifier` Imbalanced Classification Report](img/mltechptwy-mod-1-res-eec-report.png)
+
 ## Summary
