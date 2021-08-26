@@ -71,6 +71,8 @@ Utilizing the `get_dummies` function, the remaining `object` columns are encoded
 
 `X_encoded = pd.get_dummies(X, columns=obj_list)`
 
+`X_train, X_test, y_train, y_test = train_test_split(X_encoded, y, random_state=1)`
+
 ### Machine Learning Pipeline
 
 For the Analysis, the following procedures have been accomplished:
@@ -79,6 +81,13 @@ For the Analysis, the following procedures have been accomplished:
 * A confusion matrix has been generated
 * An imbalanced classification report has been generated
 
+for both **resampling** algorithms as well as **ensemble** algorithms.
+
 ## Results
+
+# Resampling Algorithms
+
+
+
 
 ## Summary
