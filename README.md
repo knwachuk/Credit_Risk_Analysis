@@ -71,6 +71,8 @@ Utilizing the `get_dummies` function, the remaining `object` columns are encoded
 
 `X_encoded = pd.get_dummies(X, columns=obj_list)`
 
+Finally, the `train_test_split` method is used.
+
 `X_train, X_test, y_train, y_test = train_test_split(X_encoded, y, random_state=1)`
 
 ### Machine Learning Pipeline
@@ -132,7 +134,7 @@ for both **resampling** algorithms as well as **ensemble** algorithms.
 | Procedure | `BalancedRandomForestClassifier` | `EasyEnsembleClassifier` |
 | --------- | ------------------- | ------- |
 | Balanced Accuracy Score | 0.7885466545953005 | 0.9316600714093861 |
-| Confusion Matrix | ![](img/mltechptwy-mod-1-res-brfc-matrix.png) | ![](img/mltechptwy-mod-1-eec-smote-matrix.png) |
+| Confusion Matrix | ![](img/mltechptwy-mod-1-res-brfc-matrix.png) | ![](img/mltechptwy-mod-1-eec-matrix.png) |
 
 ##### `BalancedRandomForestClassifier` Imbalanced Classification Report
 
