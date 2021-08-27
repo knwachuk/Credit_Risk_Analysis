@@ -125,7 +125,7 @@ for both **resampling** algorithms as well as **ensemble** algorithms.
 | Balanced Accuracy Score | 0.5447339051023905 |
 | Confusion Matrix | ![](img/mltechptwy-mod-1-res-comb-matrix.png) |
 
-##### `ClusterCentroids` Imbalanced Classification Report
+##### `SMOTEENN` Imbalanced Classification Report
 
 ![`SMOTEENN` Imbalanced Classification Report](img/mltechptwy-mod-1-res-comb-report.png)
 
@@ -145,3 +145,25 @@ for both **resampling** algorithms as well as **ensemble** algorithms.
 ![`EasyEnsembleClassifier` Imbalanced Classification Report](img/mltechptwy-mod-1-res-eec-report.png)
 
 ## Summary
+
+Before continuing this section, it is prudent to restate that the purpose of this study is to build a model to predict credit risk. Meaning that a high *precision* of the minority (fraudulent) class is favourably.
+
+### Oversampling Summary
+
+For the most part, there are no appreciable differences between the `RandomOverSampler` and the `SMOTE` models. With extremely high sensitivity and very low precision for the minority (fraudulent) class, these models are not useful.
+
+### Undersampling Summary
+
+The same as above holds true for the `ClusterCentroids` model.
+
+### Combination (Over and Under) Summary
+
+As well as the `SMOTENN` model. Although, it does a better job at the precision metric.
+
+### Ensemble Summary
+
+Although, it is clear that the **Ensemble Algorithms** have better metrics (`BalancedRandomForestClassifier` = 0.03 precision and `EasyEnsembleClassifier` = 0.09 precision), it isn't enough to positively recommend one. 
+
+It should be noted that the `EasyEnsembleClassifier` performed the best of all of the 6 models.
+
+Evaluating between the `BalancedRandomForestClassifier` and 
